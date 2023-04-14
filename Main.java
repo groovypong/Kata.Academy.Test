@@ -33,8 +33,7 @@ public class Main {
                     b = RomanNumbers.toArab(rightPart);
                 }
 
-                if (a > 10 || b > 10)
-                    throw new Exception();
+                if (a > 10 || b > 10) throw new Exception();
 
                 switch (s) {
                     case "+" -> result = a + b;
@@ -46,8 +45,7 @@ public class Main {
             }
         }
 
-        if (!operatorIsExist)
-            throw new Exception();
+        if (!operatorIsExist) throw new Exception();
 
         return isRoman ? RomanNumbers.toRoman(result) : String.valueOf(result);
     }
